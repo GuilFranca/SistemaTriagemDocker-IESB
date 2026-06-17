@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 28px;
+    background-color: var(--white);
+    border-bottom: solid 1px var(--gray-mid);
+}
+
+.leftContainerHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rightContainerHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.textContainerHeader {
+    h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

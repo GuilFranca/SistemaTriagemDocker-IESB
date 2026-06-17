@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: auto;
+}
+
+.label {
+    font-size: 15px;
+    color: var(--text-2);
+}
+
+.select {
+    font-size: 13.5px;
+    padding: 9px 12px;
+    border: 0.5px solid var(--gray-mid);
+    border-radius: 10px;
+    color: var(--text-2);
+}
+
+.select:focus {
+    border: 0.5px solid var(--black);
+}

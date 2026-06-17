@@ -1,0 +1,147 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modalTopContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid var(--gray-mid) 0.5px;
+    padding: 15px 25px;
+    width: 100%;
+}
+
+.modalTitle {
+    font-size: 18px;
+}
+
+.closeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-mid);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: var(--gray);
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 25px 0;
+    width: 100%;
+}
+
+.modalInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modalInputsTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.modalInputsBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formActions {
+    border-top: 1px solid var(--gray-mid);
+
+    padding-top: 15px;
+
+    margin-left: -25px;
+    margin-right: -25px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.formActions .cancelButton {
+    font-size: 12px;
+    padding: 5px 18px;
+    background-color: var(--white);
+    color: var(--gray-dark);
+    border: 0.5px solid var(--gray-dark);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.formActions .cancelButton:hover {
+    background-color: var(--gray);
+}
+
+.formActions .saveButton {
+    font-size: 12px;
+    padding: 8px 18px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 0.5px solid var(--black);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.formActions .saveButton:hover {
+    background-color: var(--gray-dark);
+}
+
+.toastNotification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(242, 38, 19, 0.95);
+    color: white;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+    max-width: 320px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

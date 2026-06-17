@@ -1,0 +1,33 @@
+services:
+  backend:
+    build:
+      context: ./Fila-de-Atendimento/backend
+    container_name: triagem-backend
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_PATH: /app/data/fila.db
+    volumes:
+      - backend-data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 15s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./SistemaTriagemFront-IESB
+      args:
+        VITE_API_URL: http://localhost:3000
+    container_name: triagem-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  backend-data:

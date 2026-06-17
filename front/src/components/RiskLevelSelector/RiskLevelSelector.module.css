@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.label {
+    font-size: 15px;
+    color: var(--text-2);
+}
+
+.option {
+    border: 1px solid #ddd;
+    transition: 0.2s;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-2);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.risk {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.emergencia:hover {
+    background-color: #FCEBEB;
+    border-color: #E24B4A;
+}
+
+.urgente:hover {
+    background-color: #FFF4E5;
+    border-color: #F39C12;
+}
+
+.pouco_urgente:hover {
+    background-color: #EAF3FF;
+    border-color: #4A90E2;
+}
+
+.nao_urgente:hover {
+    background-color: #EDF7E8;
+    border-color: #7CB342;
+}
+
+.emergenciaSelected {
+    background-color: #FCEBEB;
+    border-color: #E24B4A;
+}
+
+.urgenteSelected {
+    background-color: #FFF4E5;
+    border-color: #F39C12;
+}
+
+.pouco_urgenteSelected {
+    background-color: #EAF3FF;
+    border-color: #4A90E2;
+}
+
+.nao_urgenteSelected {
+    background-color: #EDF7E8;
+    border-color: #7CB342;
+}
