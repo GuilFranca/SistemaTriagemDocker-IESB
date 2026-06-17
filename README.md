@@ -77,7 +77,7 @@ docker compose down -v
 
 ## Executando localmente (desenvolvimento)
 
-### Backend
+### Backend - [Repositório original](https://github.com/carolinaarosendo/Fila-de-Atendimento)
 
 ```bash
 cd back/backend
@@ -88,7 +88,7 @@ npm run dev
 
 A API ficará disponível em `http://localhost:3000`.
 
-### Frontend
+### Frontend - [Repositório original]([https://github.com/carolinaarosendo/Fila-de-Atendimento](https://github.com/GuilFranca/SistemaTriagemFront-IESB))
 
 Em outro terminal:
 
