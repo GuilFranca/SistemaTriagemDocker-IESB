@@ -1,7 +1,7 @@
 services:
   backend:
     build:
-      context: ./Fila-de-Atendimento/backend
+      context: ./back/backend
     container_name: triagem-backend
     ports:
       - "3000:3000"
@@ -19,7 +19,7 @@ services:
 
   frontend:
     build:
-      context: ./SistemaTriagemFront-IESB
+      context: ./front
       args:
         VITE_API_URL: http://localhost:3000
     container_name: triagem-frontend
