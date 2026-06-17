@@ -23,12 +23,8 @@ A aplicação é composta por um **frontend** em React e um **backend** REST em 
 
 ## Arquitetura
 
-```mermaid
-flowchart LR
-    Browser["Navegador"] -->|":8080"| Frontend["Frontend\n(Nginx + React)"]
-    Frontend -->|":3000"| Backend["Backend\n(Express + SQLite)"]
-    Backend --> DB[("fila.db\n(volume Docker)")]
-```
+<img width="890" height="174" alt="image" src="https://github.com/user-attachments/assets/0ba19635-7a15-4027-9b78-9744cdf296c1" />
+
 
 ## Estrutura do repositório
 
